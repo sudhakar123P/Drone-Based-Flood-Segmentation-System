@@ -1,352 +1,188 @@
- 🚁 **Drone-Based Flood Detection and Segmentation using Deep Learning**
-
-
+# 🚁 Drone-Based Flood Detection and Segmentation using Deep Learning
 
 🚀 A deep learning-based system that detects and segments flood-affected regions from drone imagery using a U-Net model and a Flask web interface.
 
+---
 
-
-\---
-
-
-
-\## 📌 Overview
-
+## 📌 Overview
 
 This project focuses on automated flood detection using aerial images captured by drones. It leverages a U-Net convolutional neural network to perform pixel-wise segmentation and identify flooded regions accurately.
 
-
-
 A user-friendly web application is developed using Flask, allowing users to:
 
-
-
-\* Register and log in
-
-\* Upload drone images
-
-\* View segmentation results in real time
+* Register and log in
+* Upload drone images
+* View segmentation results in real time
 
 This solution is useful for disaster response teams and environmental monitoring systems.
 
-\---
+---
 
+## 🚀 Features
 
-\## 🚀** Features**
+* 🔐 User Authentication (Login & Registration)
+* 📤 Upload aerial images
+* 🤖 Deep learning-based segmentation (U-Net)
+* 🖼️ Display original and segmented images
+* 💾 SQLite database for user management
+* 🌐 Interactive Flask web interface
 
+---
 
-
-\* 🔐 User Authentication (Login \& Registration)
-
-\* 📤 Upload aerial images
-
-\* 🤖 Deep learning-based segmentation (U-Net)
-
-\* 🖼️ Display original and segmented images
-
-\* 💾 SQLite database for user management
-
-\* 🌐 Interactive Flask web interface
-
-
-
-\---
-
-
-
-\## 🛠️ Tech Stack
-
-
+## 🛠️ Tech Stack
 
 | Category         | Technology         |
-
 | ---------------- | ------------------ |
-
 | Language         | Python             |
-
 | Backend          | Flask              |
-
 | Deep Learning    | TensorFlow / Keras |
-
 | Image Processing | OpenCV             |
-
 | Database         | SQLite             |
-
 | Frontend         | HTML, CSS          |
 
+---
 
+## 🧠 Model Architecture
 
-\---
+* Model: U-Net
+* Input Size: 256 × 256 × 3
+* Output: Binary segmentation mask
+* Activation: Sigmoid
+* Loss Function: Binary Crossentropy
+* Optimizer: Adam
 
+---
 
+## 📂 Project Structure
 
-\## 🧠 Model Architecture
+```
+Drone-Based-Flood-Segmentation-System/
+│── app.py  
+│── train_model.py  
+│── README.md  
+│── requirements.txt  
+│── .gitignore  
+│── screenshots/  
+│── static/  
+│── templates/  
+│── Dataset/  
+```
 
+---
 
+## 📸 Screenshots
 
-\* Model: U-Net
+### 🔐 Login Page
 
-\* Input Size: 256 × 256 × 3
+![Login](screenshots/loginscrnsht.png)
 
-\* Output: Binary segmentation mask
+### 📝 Register Page
 
-\* Activation: Sigmoid
+![Register](screenshots/registerscrnsht.png)
 
-\* Loss Function: Binary Crossentropy
+### 🖥️ Drone Capture Screen
 
-\* Optimizer: Adam
+![Capture](screenshots/dronepic.jpeg)
 
+### 🎮 Remote Screen
 
+![Remote](screenshots/droneremotescrnsht.png)
 
-The model is trained on paired datasets of aerial images and corresponding flood masks.
+### 🤖 Segmentation Result
 
+![Result](screenshots/resultscrnsht.png)
 
+---
 
-\---
+## 🎥 Demo Videos
 
+### 🎬 Drone Capture Demo
 
+[▶️ Watch Capture Video](screenshots/dronecapturescreen.mp4)
 
-\## 📂 Project Structure
+### 🎬 Drone Working Demo
 
+[▶️ Watch Drone Video](screenshots/dronevideo.mp4)
 
+---
 
-drone-project/
+## ▶️ How to Run
 
-│── app.py
+### 1️⃣ Clone the repository
 
-│── train\_model.py
+```
+git clone https://github.com/sudhakar123P/Drone-Based-Flood-Segmentation-System.git
+```
 
-│── README.md
+### 2️⃣ Navigate to project folder
 
-│── requirements.txt
+```
+cd Drone-Based-Flood-Segmentation-System
+```
 
-│── .gitignore
+### 3️⃣ Install dependencies
 
-│── screenshots/
-
-│── static/
-
-│── templates/
-
-│── Dataset/
-
-
-
-\---
-
-
-
-\## 📸 Screenshots
-
-
-
-\### 🔐 Login Page
-
-
-
-!\[Login](screenshots/loginscrnsht.png)
-
-
-
-\### 📝 Register Page
-
-
-
-!\[Register](screenshots/registerscrnsht.png)
-
-
-
-\### 🖥️ Drone Capture Screen
-
-
-
-!\[Capture](screenshots/dronepic.jpeg)
-
-
-
-\### 🎮 Remote Screen
-
-
-
-!\[Remote](screenshots/droneremotescrnsht.png)
-
-
-
-\### 🤖 Segmentation Result
-
-
-
-!\[Result](screenshots/resultscrnsht.png)
-
-
-
-\---
-
-
-
-\## 🎥 Demo Videos
-
-
-
-\### 🎬 Drone Capture Demo
-
-
-
-\[▶️ Watch Capture Video](screenshots/dronecapturescreen.mp4)
-
-
-
-\### 🎬 Drone Working Demo
-
-
-
-\[▶️ Watch Drone Video](screenshots/dronevideo.mp4)
-
-
-
-\---
-
-
-
-\## ▶️ How to Run
-
-
-
-\### 1️⃣ Clone the repository
-
-
-
-git clone https://github.com/your-username/flood-drone-segmentation.git
-
-
-
-\### 2️⃣ Navigate to project folder
-
-
-
-cd flood-drone-segmentation
-
-
-
-\### 3️⃣ Install dependencies
-
-
-
+```
 pip install -r requirements.txt
+```
 
+### 4️⃣ Run the application
 
-
-\### 4️⃣ Run the application
-
-
-
+```
 python app.py
+```
 
+### 5️⃣ Open in browser
 
-
-\### 5️⃣ Open in browser
-
-
-
+```
 http://127.0.0.1:5000/
+```
 
+---
 
+## 📦 Requirements
 
-\---
+* Python 3.x
+* Flask
+* TensorFlow
+* OpenCV
+* NumPy
 
+---
 
+## 🌍 Use Cases
 
-\## 📦 Requirements
+* 🌊 Flood Monitoring Systems
+* 🚨 Disaster Management
+* 🌱 Environmental Analysis
+* 🛰️ Remote Sensing Applications
 
+---
 
+## ⚠️ Challenges Faced
 
-\* Python 3.x
+* Handling large image datasets
+* Training segmentation model efficiently
+* Managing file uploads and processing
+* Integrating ML model with web application
 
-\* Flask
+---
 
-\* TensorFlow
+## 🔮 Future Enhancements
 
-\* OpenCV
+* Deploy on cloud platforms (Azure / AWS)
+* Real-time drone video processing
+* Improve model accuracy
+* Add GIS/map visualization
 
-\* NumPy
+---
 
+## 👨‍💻 Author
 
+**Sudhakar Pandugayala**
 
-\---
+---
 
-
-
-\## 🌍 Use Cases
-
-
-
-\* 🌊 Flood Monitoring Systems
-
-\* 🚨 Disaster Management
-
-\* 🌱 Environmental Analysis
-
-\* 🛰️ Remote Sensing Applications
-
-
-
-\---
-
-
-
-\## ⚠️ Challenges Faced
-
-
-
-\* Handling large image datasets
-
-\* Training segmentation model efficiently
-
-\* Managing file uploads and processing
-
-\* Integrating ML model with web application
-
-
-
-\---
-
-
-
-\## 🔮 Future Enhancements
-
-
-
-\* Deploy on cloud platforms (Azure / AWS)
-
-\* Real-time drone video processing
-
-\* Improve model accuracy with larger datasets
-
-\* Add map-based visualization (GIS integration)
-
-
-
-\---
-
-
-
-\## 👨‍💻 Author
-
-
-
-\*\*Sudhakar Pandugayala\*\*
-
-
-
-\---
-
-
-
-\## ⭐ Conclusion
-
-
+## ⭐ Conclusion
 
 This project demonstrates how deep learning and drone technology can be combined to solve real-world problems like flood detection. It highlights the integration of machine learning models with web applications for practical deployment.
-
-
-
