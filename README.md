@@ -1,4 +1,4 @@
-\# 🚁 Drone-Based Flood Detection and Segmentation using Deep Learning
+ 🚁 **Drone-Based Flood Detection and Segmentation using Deep Learning**
 
 
 
@@ -11,7 +11,6 @@
 
 
 \## 📌 Overview
-
 
 
 This project focuses on automated flood detection using aerial images captured by drones. It leverages a U-Net convolutional neural network to perform pixel-wise segmentation and identify flooded regions accurately.
@@ -28,17 +27,12 @@ A user-friendly web application is developed using Flask, allowing users to:
 
 \* View segmentation results in real time
 
-
-
 This solution is useful for disaster response teams and environmental monitoring systems.
-
-
 
 \---
 
 
-
-\## 🚀 Features
+\## 🚀** Features**
 
 
 
